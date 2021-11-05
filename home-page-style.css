@@ -1,0 +1,137 @@
+root {
+  --textColor: #2a2a2e;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .09rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body a {
+  text-decoration: none;
+}
+.site-entry {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 91.7vh;
+}
+.site-entry-video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.entry-text {
+  font-family: "Cookie";
+  font-size: 7rem;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+}
+.nav-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.nav-container li {
+  margin: 0 1rem;
+  transition: 100ms linear;
+}
+.nav-container li:hover {
+  color: skyblue;
+}
+.nav-container a {
+  font-size: 2rem;
+  color: var(--textColor);
+}
+.nav-container .links li:nth-child(4) {
+  border: .2rem solid skyblue;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  color: skyblue;
+}
+  .nav-container .links li:nth-child(4):hover {
+    background-color: skyblue;
+    color: #fff;
+  }
+.nav-container .links li:nth-child(1) {
+    border: .2rem solid red;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    color: red;
+}
+.nav-container .links li:nth-child(1):hover {
+  background-color: red;
+  color: #fff;
+}
+.nav-container .links li:nth-child(3):hover {
+  background-color: skyblue;
+  color: #fff;
+  padding: 1rem;
+  border-radius: .7rem;
+}
+.nav-container .links li {
+ margin: 0 1.2rem;
+}
+.nav-logo {
+  width: 11rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Cookie", "Arial Narrow";
+  font-size: 1rem;
+}
+.logo p {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  padding-right: 1rem;
+}
+.design-nav-ball-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.design-nav-ball {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 0.1rem;
+}
+.design-nav-ball-1 {
+  background-color: red;
+}
+.design-nav-ball-2 {
+  background-color: orange;
+}
+.design-nav-ball-3 {
+  background-color: green;
+}
+.design-nav-ball-4 {
+  background-color: purple;
+}
+.design-nav-ball-5 {
+  background-color: skyblue;
+}
