@@ -195,7 +195,7 @@ body ul {
   margin: 0 auto;
   margin-top: 4rem;
   font-size: 2rem;
-  background-color: #f1f1f1;
+  background-color: #fafafa75;
   width: 40%;
   padding: 0rem;
   display: flex;
@@ -248,7 +248,7 @@ body ul {
   margin: 0 auto;
   margin-top: 2rem;
   font-size: 2rem;
-  background-color: #f8f7f9;
+  background-color: #fafafaec;
   width: 75%;
   /* height: 30vh; */
   border-radius: 20px;
@@ -270,7 +270,7 @@ body ul {
   background-color: #fff;
   border-radius: 0.5rem;
   border: 2px solid rgba(68, 68, 68, 0.3);
-  box-shadow: 2px 2px 7px rgb(68, 68, 68);
+  /* box-shadow: 2px 2px 7px rgb(68, 68, 68); */
   margin-top: 2rem;
 }
 .r-search button {
@@ -302,7 +302,7 @@ body ul {
   background-color: #fff;
   border-radius: 0.5rem;
   border: 2px solid rgba(68, 68, 68, 0.3);
-  box-shadow: 2px 2px 7px rgb(68, 68, 68);
+  /* box-shadow: 2px 2px 7px rgb(68, 68, 68); */
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -334,24 +334,33 @@ body ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: rgba(255, 0, 0, 0.75);
   /* padding: 2rem; */
-  border: 2px solid rgb(165, 165, 165);
+  /* border: 2px solid rgb(165, 165, 165); */
+  border:2px solid rgba(255, 0, 0, 0.75) ;
   border-radius: 1rem;
   padding: 1rem;
   cursor: pointer;
   /* border: none; */
   /* outline: none; */
   /* background-color: transparent; */
+  transition: 100ms linear;
+}
+.r-add:hover{
+  background-color: rgba(255, 0, 0, .9);
 }
 
 .r-add span {
+  color: rgb(221, 221, 221);
   font-size: 2rem;
   font-weight: bold;
   margin-right: 1rem;
 }
 .r-add .add-hotel-svg {
   font-weight: bold;
+}
+.add-hotel-svg path{
+  fill: rgb(221, 221, 221);
 }
 .r-search-button {
   background-color: skyblue;
