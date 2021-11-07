@@ -325,7 +325,6 @@ body ul {
   /* box-shadow: 2px 2px 7px rgb(68, 68, 68); */
   padding-right: 1rem;
   padding-left: 1rem;
-  z-index: 2;
 }
 .r-calender input {
   border: none;
@@ -336,7 +335,6 @@ body ul {
   font-size: 2rem;
   border-radius: 1rem;
   cursor: pointer;
-  z-index: 2;
   /* overflow: hidden; */
 }
 
@@ -397,7 +395,6 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   border-radius: 1rem;
   padding: 1rem;
   cursor: pointer;
-  z-index: 2;
   /* border: none; */
   /* outline: none; */
   /* background-color: transparent; */
@@ -406,7 +403,6 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 .r-add:hover {
   background-color: rgba(255, 0, 0, 0.9);
-  z-index: 2;
 }
 
 .r-add span {
@@ -435,12 +431,10 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   top: 3rem;
   cursor: pointer;
   transition: 100ms linear;
-  z-index: 2;
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 3px 1px;
 }
 .r-search-button:hover {
   background-color: rgb(70, 188, 235);
-  z-index: 2;
 }
 .reservation-part {
   position: relative;
