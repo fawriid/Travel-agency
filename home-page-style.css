@@ -190,6 +190,7 @@ body ul {
 .layers-container {
   margin: 0 auto;
   text-align: center;
+  padding-top: 2rem;
 }
 .r-layer-1 {
   font-size: 2.1rem;
@@ -205,7 +206,7 @@ body ul {
   margin: 0 auto;
   margin-top: 4rem;
   font-size: 2rem;
-  background-color: #fafafad8;
+  background-color: #fafafae5;
   width: 40%;
   padding: 0rem;
   display: flex;
@@ -261,13 +262,12 @@ body ul {
   font-size: 2rem;
   background-color: #fafafa;
   width: 75%;
-  height: 370px;
+  height: 360px;
   border-radius: 20px;
   box-shadow: 2px 2px 9px rgb(68, 68, 68);
   padding: 1rem;
-  padding-top: 2rem;
   margin-bottom: 3rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
   position: relative;
   bottom: 65px;
   /* z-index: -1; */
@@ -384,22 +384,19 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* new*/
 .r-add {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 0, 0, 0.75);
-  /* padding: 2rem; */
-  /* border: 2px solid rgb(165, 165, 165); */
   border: 2px solid rgba(255, 0, 0, 0.75);
   border-radius: 1rem;
   padding: 1rem;
   cursor: pointer;
-  /* border: none; */
-  /* outline: none; */
-  /* background-color: transparent; */
   transition: 100ms linear;
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 3px 1px;
+  position: relative;
+  right: 500px;
 }
 .r-add:hover {
   background-color: rgba(255, 0, 0, 0.9);
@@ -428,7 +425,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   font-size: 3.5rem;
   font-weight: bold;
   position: relative;
-  top: 3rem;
+  top: 2rem;
   cursor: pointer;
   transition: 100ms linear;
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 3px 1px;
