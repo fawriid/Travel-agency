@@ -463,7 +463,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* explore */
 .explore {
-  margin-top: 9rem;
+  margin-top: 15rem;
 }
 .explore-text {
   margin: 0 auto;
@@ -485,7 +485,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  border: 1px solid #b6b6b6;
+  border: .8px solid #cacaca;
   margin-top: 1rem;
 }
 .explore-widget:hover {
@@ -513,6 +513,50 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   margin-top: 0.7rem;
   color: #8c8c8c;
 }
+/* explore end */
+/* experiences  */
+.experiences {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 17rem;
+}
+.experiences-widgets {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  /* flex-wrap: wrap; */
+}
+.experiences-widget {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 250px;
+  border: .8px solid #cecece;
+  border-bottom: 4px solid skyblue;
+  padding: 2rem;
+  padding-top: 3.5rem;
+}
+.experiences-widget a {
+  color: #5392f9;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.experiences-widget a:hover{
+  color: #77adf3;
+}
+.experiences-widget span {
+  margin-top: 2rem;
+  color: #8c8c8c;
+}
+.experiences-widget p {
+  font-size: 2.2rem;
+}
+/* experiences end */
 
 .height {
   width: 100%;
