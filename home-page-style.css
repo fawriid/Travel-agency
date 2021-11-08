@@ -559,37 +559,37 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* experiences end */
 /* most popular destinations */
-.popular-destinations{
+.popular-destinations {
   font-size: 2rem;
   text-align: center;
   margin-top: 11rem;
 }
 
-.popular-destinations-widgets{
+.popular-destinations-widgets {
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0  auto;
+  margin: 0 auto;
 }
 .popular-destinations-widget {
   margin-top: 5rem;
   width: 16%;
 }
-.popular-destinations-widget img{
+.popular-destinations-widget img {
   width: 80%;
   border-radius: 50%;
   transition: 200ms linear;
 }
-.popular-destinations-widget img:hover{
+.popular-destinations-widget img:hover {
   transform: scale(1.06);
   box-shadow: 1px 1px 7px 3px #b6b6b6;
 }
-.popular-destinations-span p{
+.popular-destinations-span p {
   color: black;
   font-size: 2.2rem;
 }
-.popular-destinations-span span{
+.popular-destinations-span span {
   color: #8c8c8c;
 }
 /* most popular destinations end */
@@ -599,4 +599,40 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   height: 400px;
   background-color: antiquewhite;
   margin-top: 10rem;
+}
+/* footer start */
+/* footer nav  */
+
+.footer-nav {
+  background-color: #e6e6e6;
+  margin-top: 10rem;
+  width: 100%;
+  margin-top: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 2rem; */
+  /* padding-left: 9rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+.footer-nav-object {
+  width: 10%;
+  margin: 0 auto;
+}
+.footer-nav-object h4 {
+  font-size: 2.2rem;
+}
+.footer-nav-object ul {
+  padding-left: 0;
+}
+.footer-nav-object li {
+  margin-top: 0.5rem;
+}
+.footer-nav-object a {
+  color: #5e5d5d;
+}
+.footer-nav-object a:hover {
+  text-decoration: underline;
 }
