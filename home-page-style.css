@@ -66,7 +66,8 @@ body ul {
   /* position: absolute;
   top: 30%;
   left: 760px; */
-  transform: translateY(-25rem);
+  transform: translateY(-23rem);
+  margin: 0 auto;
 }
 .nav-container nav {
   display: flex;
@@ -463,7 +464,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* explore */
 .explore {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 .explore-text {
   margin: 0 auto;
@@ -485,7 +486,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  border: .8px solid #cacaca;
+  border: 0.8px solid #cacaca;
   margin-top: 1rem;
 }
 .explore-widget:hover {
@@ -518,7 +519,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 .experiences {
   font-size: 2rem;
   text-align: center;
-  margin-top: 17rem;
+  margin-top: 12rem;
 }
 .experiences-widgets {
   display: flex;
@@ -536,7 +537,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   flex-direction: column;
   width: 30%;
   height: 250px;
-  border: .8px solid #cecece;
+  border: 0.8px solid #cecece;
   border-bottom: 4px solid skyblue;
   padding: 2rem;
   padding-top: 3.5rem;
@@ -546,7 +547,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   font-size: 3rem;
   font-weight: bold;
 }
-.experiences-widget a:hover{
+.experiences-widget a:hover {
   color: #77adf3;
 }
 .experiences-widget span {
@@ -557,6 +558,41 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   font-size: 2.2rem;
 }
 /* experiences end */
+/* most popular destinations */
+.popular-destinations{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 11rem;
+}
+
+.popular-destinations-widgets{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0  auto;
+}
+.popular-destinations-widget {
+  margin-top: 5rem;
+  width: 16%;
+}
+.popular-destinations-widget img{
+  width: 80%;
+  border-radius: 50%;
+  transition: 200ms linear;
+}
+.popular-destinations-widget img:hover{
+  transform: scale(1.06);
+  box-shadow: 1px 1px 7px 3px #b6b6b6;
+}
+.popular-destinations-span p{
+  color: black;
+  font-size: 2.2rem;
+}
+.popular-destinations-span span{
+  color: #8c8c8c;
+}
+/* most popular destinations end */
 
 .height {
   width: 100%;
