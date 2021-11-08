@@ -440,6 +440,12 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* reservation end */
 /* back to europe */
+.back-to-europe-a div{
+  width: 40%;
+  height: 300px;
+  margin: 0 auto;
+  z-index: 3;
+}
 .back-to-europe {
   background-image: url(https://cdn6.agoda.net/images/WebCampaign/wcSP20210824EUv2/en-us.png);
   width: 40%;
@@ -451,4 +457,64 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 5rem;
+}
+/* explore */
+.explore{
+  margin-top: 9rem;
+}
+.explore-text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+}
+.explore-widgets{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+}
+.explore-widget{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #b6b6b6;
+  margin-top: 1rem;
+}
+.explore-widget:hover{
+  box-shadow: 1px 1px 7px 5px #c5c5c5;
+}
+.explore-widget img{
+width: 320px;
+}
+.explore-widget-span{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 0 1rem 1rem;
+}
+.explore-widget-span span{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.explore-widget-span span:nth-child(1){
+  margin-top: 2rem;
+  color: black;
+}
+.explore-widget-span span:nth-child(2){
+  margin-top: .7rem;
+  color: #8c8c8c;
+}
+
+.height{
+width: 100%;
+height: 400px;
+background-color: antiquewhite;
+margin-top: 10rem;
 }
