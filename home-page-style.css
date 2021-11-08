@@ -44,13 +44,14 @@ body ul {
   align-items: center;
   overflow: hidden;
   width: 100%;
-  height: 135vh;
+  height: 132.6rem;
   /* border-bottom-left-radius: 4rem; */
   /* border-bottom-right-radius: 4rem; */
 }
 .site-entry-video {
   position: absolute;
   width: 100%;
+  height: 115rem;
   top: 0;
   left: 0;
   object-fit: cover;
@@ -62,9 +63,10 @@ body ul {
   font-size: 7rem;
   text-align: center;
   z-index: 2;
-  position: absolute;
+  /* position: absolute;
   top: 30%;
-  left: 760px;
+  left: 760px; */
+  transform: translateY(-25rem);
 }
 .nav-container nav {
   display: flex;
@@ -440,7 +442,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* reservation end */
 /* back to europe */
-.back-to-europe-a div{
+.back-to-europe-a div {
   width: 40%;
   height: 300px;
   margin: 0 auto;
@@ -460,7 +462,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   margin-bottom: 5rem;
 }
 /* explore */
-.explore{
+.explore {
   margin-top: 9rem;
 }
 .explore-text {
@@ -468,7 +470,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   text-align: center;
   font-size: 3rem;
 }
-.explore-widgets{
+.explore-widgets {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -478,7 +480,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   margin-top: 6rem;
   flex-wrap: wrap;
 }
-.explore-widget{
+.explore-widget {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -486,35 +488,35 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   border: 1px solid #b6b6b6;
   margin-top: 1rem;
 }
-.explore-widget:hover{
+.explore-widget:hover {
   box-shadow: 1px 1px 7px 5px #c5c5c5;
 }
-.explore-widget img{
-width: 320px;
+.explore-widget img {
+  width: 320px;
 }
-.explore-widget-span{
+.explore-widget-span {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   padding: 0 0 1rem 1rem;
 }
-.explore-widget-span span{
+.explore-widget-span span {
   font-size: 2rem;
   font-weight: 600;
 }
-.explore-widget-span span:nth-child(1){
+.explore-widget-span span:nth-child(1) {
   margin-top: 2rem;
   color: black;
 }
-.explore-widget-span span:nth-child(2){
-  margin-top: .7rem;
+.explore-widget-span span:nth-child(2) {
+  margin-top: 0.7rem;
   color: #8c8c8c;
 }
 
-.height{
-width: 100%;
-height: 400px;
-background-color: antiquewhite;
-margin-top: 10rem;
+.height {
+  width: 100%;
+  height: 400px;
+  background-color: antiquewhite;
+  margin-top: 10rem;
 }
