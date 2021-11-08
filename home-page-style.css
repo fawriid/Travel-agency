@@ -436,4 +436,19 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 .reservation-part {
   position: relative;
   top: -46rem;
+  margin-bottom: -45rem;
+}
+/* reservation end */
+/* back to europe */
+.back-to-europe {
+  background-image: url(https://cdn6.agoda.net/images/WebCampaign/wcSP20210824EUv2/en-us.png);
+  width: 40%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  /* position: relative; */
+  /* top: -430px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
