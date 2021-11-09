@@ -74,16 +74,22 @@ body ul {
   justify-content: space-between;
   align-items: center;
 }
+.hamburger-menu {
+  display: none;
+}
 .nav-container ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
 }
 .nav-container li {
   margin: 0 1rem;
   transition: 100ms linear;
+}
+.nav-items li {
+  margin: 0 1.3rem;
 }
 .nav-container li:hover:not(.not) {
   color: skyblue;
@@ -92,33 +98,38 @@ body ul {
   font-size: 2rem;
   color: var(--textColor);
 }
-.nav-container .links li:nth-child(4) {
+.nav-links ul {
+  padding-right: 0.5rem;
+  margin-right: 0;
+  margin-left: 6rem;
+}
+.nav-container .nav-links li:nth-child(4) {
   border: 0.2rem solid skyblue;
   border-radius: 0.7rem;
   padding: 1rem;
   color: skyblue;
 }
-.nav-container .links li:nth-child(4):hover {
+.nav-container .nav-links li:nth-child(4):hover {
   background-color: skyblue;
   color: #fff;
 }
-.nav-container .links li:nth-child(1) {
+.nav-container .nav-links li:nth-child(1) {
   border: 0.2rem solid red;
   border-radius: 0.7rem;
   padding: 1rem;
   color: red;
 }
-.nav-container .links li:nth-child(1):hover {
+.nav-container .nav-links li:nth-child(1):hover {
   background-color: red;
   color: #fff;
 }
-.nav-container .links li:nth-child(3):hover {
+.nav-container .nav-links li:nth-child(3):hover {
   background-color: skyblue;
   color: #fff;
   padding: 1rem;
   border-radius: 0.7rem;
 }
-.nav-container .links li {
+.nav-container .nav-links li {
   margin: 0 1.2rem;
 }
 .nav-logo {
@@ -180,7 +191,9 @@ body ul {
   position: absolute;
   top: 0;
   z-index: 2;
+  padding: 0 1rem;
 }
+
 .covid-alert a {
   margin-left: 1rem;
   color: aqua;
@@ -257,7 +270,7 @@ body ul {
 
 .r-layer-3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
@@ -270,7 +283,8 @@ body ul {
   box-shadow: 2px 2px 9px rgb(68, 68, 68);
   padding: 1rem;
   margin-bottom: 3rem;
-  padding-top: 5rem;
+  padding-top: 0rem;
+  padding-bottom: 6rem;
   position: relative;
   bottom: 65px;
   /* z-index: -1; */
@@ -288,7 +302,7 @@ body ul {
   border-radius: 0.5rem;
   border: 2px solid rgba(68, 68, 68, 0.3);
   /* box-shadow: 2px 2px 7px rgb(68, 68, 68); */
-  margin-top: 3rem;
+  margin-top: 0rem;
   border-radius: 20px;
   z-index: 2;
 }
@@ -398,8 +412,9 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   cursor: pointer;
   transition: 100ms linear;
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 3px 1px;
-  position: relative;
-  right: 500px;
+  position: absolute;
+  left: 8rem;
+  bottom: 4rem;
 }
 .r-add:hover {
   background-color: rgba(255, 0, 0, 0.9);
@@ -407,7 +422,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 
 .r-add span {
   color: rgb(221, 221, 221);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-right: 1rem;
 }
@@ -427,8 +442,8 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   color: #fff;
   font-size: 3.5rem;
   font-weight: bold;
-  position: relative;
-  top: 2rem;
+  position: absolute;
+  bottom: -3.5rem;
   cursor: pointer;
   transition: 100ms linear;
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 3px 1px;
@@ -443,12 +458,12 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 /* reservation end */
 /* back to europe */
-.back-to-europe-a div {
+/* .back-to-europe-a div {
   width: 40%;
   height: 300px;
   margin: 0 auto;
   z-index: 3;
-}
+} */
 .back-to-europe {
   background-image: url(https://cdn6.agoda.net/images/WebCampaign/wcSP20210824EUv2/en-us.png);
   width: 40%;
@@ -536,11 +551,19 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   align-items: center;
   flex-direction: column;
   width: 30%;
-  height: 250px;
+  margin: 0 1rem;
+
+  /* height: 250px; */
   border: 0.8px solid #cecece;
   border-bottom: 4px solid skyblue;
   padding: 2rem;
   padding-top: 3.5rem;
+}
+.experiences-widget:nth-child(2) {
+  padding-bottom: 4.5rem;
+}
+.experiences-widget:nth-child(3) {
+  padding-bottom: 4.5rem;
 }
 .experiences-widget a {
   color: #5392f9;
@@ -571,10 +594,12 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .popular-destinations-widget {
   margin-top: 5rem;
   width: 16%;
+  min-width: 160px;
 }
 .popular-destinations-widget img {
   width: 80%;
@@ -591,9 +616,11 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 }
 .popular-destinations-span span {
   color: #8c8c8c;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.01rem;
 }
 /* most popular destinations end */
-
 
 /* footer start */
 /* footer nav  */
@@ -632,23 +659,23 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   text-decoration: underline;
 }
 /* footer secondary part */
-.footer-second{
+.footer-second {
   text-align: center;
   font-size: 2rem;
-  background-color: #2A2A2E;
+  background-color: #2a2a2e;
   color: #b6b6b6;
   width: 100%;
   /* height: 400px; */
   padding-top: 4rem;
   padding-bottom: 7rem;
 }
-.footer-second p{
-  width: 50%;
+.footer-second p {
+  width: 70%;
   margin: 0 auto;
   font-size: 2.2rem;
   line-height: 3.6rem;
 }
-.footer-second-imges{
+.footer-second-imges {
   margin: 6rem 0;
   width: 90%;
   margin: 6rem auto;
@@ -656,28 +683,259 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   justify-content: space-around;
   align-items: center;
 }
-.footer-second-img{
+.footer-second-img {
   background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
   background-repeat: no-repeat;
   width: 144px;
   height: 48px;
   transform: scale(1.3);
 }
-.footer-second-img1{
+.footer-second-img1 {
   background-position: 0px -90px;
 }
-.footer-second-img2{
+.footer-second-img2 {
   background-position: -144px -148px;
 }
-.footer-second-img3{
+.footer-second-img3 {
   background-position: 0px -148px;
 }
-.footer-second-img4{
+.footer-second-img4 {
   background-position: -288px -148px;
 }
-.footer-second-img5{
+.footer-second-img5 {
   background-position: -144px -90px;
 }
-.footer-second-img6{
+.footer-second-img6 {
   background-position: -288px -90px;
+}
+
+/* responsive */
+/* mobile */
+/* mobile */
+
+@media (max-width: 480px) {
+}
+/* tablet */
+/* tablet */
+/* tablet */
+
+@media (min-width: 481px) and (max-width: 760px) {
+  
+}
+/* bigger screen */
+/* bigger screen */
+/* bigger screen */
+
+@media (min-width: 761px) and (max-width: 980px) {
+  .nav-items li:not(.not) {
+    display: none;
+  }
+  .nav-links li:not(.not) {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    margin:0;
+  }
+  .hamburger-menu button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .hamburger-menu i {
+    font-size: 4rem;
+  }
+  .nav-container a {
+    font-size: 1.5rem;
+  }
+  .covid-alert {
+    font-size: 1.6rem;
+    width: 90%;
+    padding: 0 5rem;
+  }
+  .r-layer-1 h1 {
+    font-size: 3rem;
+  }
+  .r-layer-1 h3 {
+    font-size: 2rem;
+  }
+  .r-layer-2 {
+    font-size: 1.6rem;
+  }
+  .svg-icon {
+    font-size: 4rem;
+  }
+  .r-layer-3 {
+    width: 85%;
+    height: 290px;
+  }
+  /* layer3 */
+  .r-search {
+    height: 60px;
+  }
+  .r-search .svg-icon {
+    font-size: 3rem;
+  }
+  .r-search input {
+    font-size: 2rem;
+  }
+  .r-calender {
+    height: 60px;
+  }
+  .r-calender input {
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .r-calender select {
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .r-add {
+    bottom: 6.5rem;
+  }
+  .r-add .svg-icon {
+    font-size: 3rem;
+  }
+  .r-add span {
+    font-size: 1.5rem;
+  }
+  .r-search-button {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  /* layer3 */
+  .back-to-europe {
+    width: 60%;
+  }
+
+  .experiences-widgets {
+    width: 90%;
+  }
+  .explore-widget img {
+    width: 250px;
+  }
+  /* footer */
+  .footer-nav {
+    font-size: 1.7rem;
+    padding-bottom: 3rem;
+  }
+  .footer-nav-object h4 {
+    font-size: 2rem;
+  }
+
+  /* ff */
+
+  .footer-second p {
+    width: 85%;
+    font-size: 1.9rem;
+  }
+  .footer-second-img {
+    transform: scale(1);
+  }
+  .footer-second span {
+    font-size: 1.6rem;
+  }
+}
+/* laptop */
+/* laptop */
+/* laptop */
+
+@media (min-width: 980px) and (max-width: 1130px) {
+  .nav-container a {
+    font-size: 1.5rem;
+  }
+  .covid-alert {
+    font-size: 1.6rem;
+    width: 90%;
+    padding: 0 5rem;
+  }
+  .r-layer-1 h1 {
+    font-size: 3rem;
+  }
+  .r-layer-1 h3 {
+    font-size: 2rem;
+  }
+  .r-layer-2 {
+    font-size: 1.6rem;
+  }
+  .svg-icon {
+    font-size: 4rem;
+  }
+  .r-layer-3 {
+    width: 85%;
+    height: 290px;
+  }
+  /* layer3 */
+  .r-search {
+    height: 60px;
+  }
+  .r-search .svg-icon {
+    font-size: 3rem;
+  }
+  .r-search input {
+    font-size: 2rem;
+  }
+  .r-calender {
+    height: 60px;
+  }
+  .r-calender input {
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .r-calender select {
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .r-add {
+    bottom: 6.5rem;
+  }
+  .r-add .svg-icon {
+    font-size: 3rem;
+  }
+  .r-add span {
+    font-size: 1.5rem;
+  }
+  .r-search-button {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  /* layer3 */
+  .back-to-europe {
+    width: 60%;
+  }
+  /* footer */
+  .footer-nav {
+    font-size: 1.7rem;
+    padding-bottom: 3rem;
+  }
+  .footer-nav-object h4 {
+    font-size: 2rem;
+  }
+
+  .footer-second p {
+    width: 85%;
+    font-size: 1.9rem;
+  }
+  .footer-second-img {
+    transform: scale(1);
+  }
+  .footer-second span {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+/* ds */
+@media (min-width: 1130px) and (max-width: 1400px) {
+  .nav-items li{
+    width: 20%;
+    margin: 0 .2rem;
+  }
+  .nav-items li:nth-child(2){
+    margin-left: 2rem;
+  }
 }
