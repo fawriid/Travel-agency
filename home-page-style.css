@@ -720,7 +720,157 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 /* tablet */
 
 @media (min-width: 481px) and (max-width: 760px) {
-  
+  .entry-text{
+    font-size: 4rem;
+  }
+  .nav-items li:not(.not) {
+    display: none;
+  }
+  .nav-links li:not(.not) {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    margin: 0;
+  }
+  .hamburger-menu button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .hamburger-menu i {
+    font-size: 4rem;
+  }
+  .nav-container a {
+    font-size: 1.5rem;
+  }
+  .covid-alert {
+    font-size: 1.6rem;
+    width: 90%;
+    padding: 0 5rem;
+  }
+  .r-layer-1 h1 {
+    font-size: 2.4rem;
+  }
+  .r-layer-1 h3 {
+    font-size: 1.6rem;
+  }
+  .r-layer-2 {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+  .svg-icon {
+    font-size: 3rem;
+  }
+  .r-layer-3 {
+    width: 90%;
+    height: 290px;
+  }
+  /* layer3 */
+  .r-search {
+    height: 50px;
+  }
+  .r-search .svg-icon {
+    font-size: 2.6rem;
+  }
+  .r-search input {
+    font-size: 1.6rem;
+  }
+  .r-calender {
+    height: 50px;
+  }
+  .r-calender input {
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .r-calender select {
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .r-add {
+    bottom: 6.5rem;
+  }
+  .r-add .svg-icon {
+    font-size: 2.6rem;
+  }
+  .r-add span {
+    font-size: 1.1rem;
+  }
+  .r-search-button {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  /* layer3 */
+  .back-to-europe {
+    width: 80%;
+    height: 200px;
+  }
+
+  .explore-text {
+    font-size: 2.3rem;
+  }
+  .experiences-widgets {
+    width: 90%;
+  }
+  .explore-widget img {
+    width: 170px;
+  }
+  .explore-widget-span span {
+    font-size: 1.5rem;
+  }
+  .experiences h1 {
+    font-size: 2.5rem;
+    margin-bottom: -3rem;
+  }
+  .experiences-widgets {
+    flex-wrap: wrap;
+  }
+  .experiences-widget a {
+    font-size: 2rem;
+  }
+  .experiences-widget span {
+    font-size: 1.5rem;
+  }
+  .experiences-widget p {
+    font-size: 2rem;
+  }
+  .experiences-widget:nth-child(3) {
+    margin-top: 2rem;
+  }
+  .popular-destinations h1 {
+    font-size: 2.4rem;
+  }
+  .popular-destinations-span p{
+    font-size: 1.7rem;
+  }
+  .popular-destinations-span span{
+    font-size: 1.4rem;
+  }
+  /* footer */
+  .footer-nav {
+    font-size: 1.1rem;
+    padding-bottom: 3rem;
+  }
+  .footer-nav li{
+    margin-top: 1rem;
+  }
+  .footer-nav-object h4 {
+    font-size: 1.2rem;
+  }
+
+  /* ff */
+
+  .footer-second p {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+  .footer-second-img {
+    transform: scale(.9);
+  }
+  .footer-second span {
+    font-size: 1.3rem;
+  }
 }
 /* bigger screen */
 /* bigger screen */
@@ -735,7 +885,7 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   }
   .hamburger-menu {
     display: inline-block;
-    margin:0;
+    margin: 0;
   }
   .hamburger-menu button {
     border: none;
@@ -926,16 +1076,13 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   }
 }
 
-
-
-
 /* ds */
 @media (min-width: 1130px) and (max-width: 1400px) {
-  .nav-items li{
+  .nav-items li {
     width: 20%;
-    margin: 0 .2rem;
+    margin: 0 0.2rem;
   }
-  .nav-items li:nth-child(2){
+  .nav-items li:nth-child(2) {
     margin-left: 2rem;
   }
 }
