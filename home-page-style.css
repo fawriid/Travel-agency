@@ -713,7 +713,246 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 /* mobile */
 /* mobile */
 
-@media (max-width: 480px) {
+
+@media (max-width:200px) {
+  .nav-logo {
+    width: 5rem;
+  }
+  .logo {
+    font-size: 0.4rem;
+  }
+  .logo p {
+    font-size: 1.5rem;
+  }
+  .nav-items ul{
+    padding: 0;
+  }
+  
+  .entry-text {
+    font-size: 4rem;
+  }
+  .nav-items li:not(.not) {
+    display: none;
+  }
+  .nav-links li:not(.not) {
+    display: none;
+  }
+  .nav-links ul{
+    margin-left: 0;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    margin: 0;
+  }
+  .hamburger-menu button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .hamburger-menu i {
+    font-size: 3rem;
+  }
+  .nav-container a {
+    font-size: 1.5rem;
+  }
+ .nav-links ul{
+   padding: 0;
+ }
+ .nav-container li {
+   margin: 0;
+ }
+  .covid-alert {
+    font-size: 1.2rem;
+    width: 90%;
+    padding: 0 5rem;
+  }
+  .layers-container{
+    overflow: hidden;
+  }
+  .r-layer-1 h1 {
+    font-size: 1.6rem;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+  .r-layer-1 h3 {
+    font-size: 1.2rem;
+    padding: 1.7rem;
+    padding-top: 0;
+  }
+  .r-layer-2 {
+    font-size: .8rem;
+    width: 80%;
+    overflow: hidden;
+  }
+  .r-layer-2 li{
+    margin: 0;
+    padding: .6rem;
+  }
+  .svg-icon {
+    font-size: 1rem;
+  }
+  .r-layer-3 {
+    width: 90%;
+    height: 290px;
+  }
+  /* layer3 */
+  .r-search {
+    height: 30px;
+  }
+  .r-search .svg-icon {
+    font-size: 1rem;
+  }
+  .r-search input {
+    font-size: .6rem;
+  }
+  .r-calender {
+    height: 30px;
+  }
+  .r-calender input {
+    height: 30px;
+    font-size: .6rem;
+    padding: 0;
+  }
+  input[type="date"]::-webkit-datetime-edit,
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-clear-button {
+    color: #fff;
+    position: relative;
+  }
+
+  input[type="date"]::-webkit-datetime-edit-year-field {
+    position: absolute !important;
+    border-left: 1px solid #8c8c8c;
+    padding: 1px;
+    /* padding-left: 1rem; */
+    color: #000;
+    left: 1000px;
+  }
+
+  input[type="date"]::-webkit-datetime-edit-month-field {
+    position: absolute !important;
+    border-left: 1px solid #8c8c8c;
+    padding: 1px;
+    /* padding-left: 0.6rem; */
+    color: #000;
+    left: 15px;
+  }
+
+  input[type="date"]::-webkit-datetime-edit-day-field {
+    position: absolute !important;
+    color: #000;
+    padding: 1px;
+    left: 0px;
+  }
+  .r-calender select {
+    height: 30px;
+    font-size: 0.6rem;
+    padding: 0;
+  }
+  .r-add {
+    bottom: 6.5rem;
+  }
+  .r-add .svg-icon {
+    font-size: 2.5rem;
+  }
+  .r-add span {
+    font-size: .8rem;
+  }
+  .r-search-button {
+    width: 60%;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  /* layer3 */
+  .back-to-europe {
+    width: 80%;
+    height: 100px;
+  }
+
+  .explore-text {
+    font-size: 1.9rem;
+  }
+  .experiences-widgets {
+    width: 90%;
+  }
+  .explore-widget img {
+    width: 140px;
+  }
+  .explore-widget-span span {
+    font-size: 1rem;
+  }
+  .experiences h1 {
+    font-size: 1.7rem;
+    margin-bottom: -3rem;
+  }
+  .experiences-widgets {
+    flex-wrap: wrap;
+  }
+  .experiences-widget a {
+    font-size: 1.4rem;
+  }
+  .experiences-widget span {
+    font-size: 1.1rem;
+  }
+  .experiences-widget p {
+    font-size: 1.4rem;
+  }
+  .experiences-widget {
+    width: 70%;
+  }
+  .experiences-widget:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .experiences-widget:nth-child(3) {
+    margin-top: 2rem;
+  }
+  .popular-destinations h1 {
+    font-size: 2rem;
+  }
+  .popular-destinations-span p {
+    font-size: 1.4rem;
+  }
+  .popular-destinations-span span {
+    font-size: 1.2rem;
+  }
+  /* footer */
+  .footer-nav {
+    font-size: 1.1rem;
+    padding-bottom: 3rem;
+    flex-direction: column;
+  }
+  .footer-nav-object {
+    width: 90%;
+  }
+  .footer-nav li {
+    margin-top: 1rem;
+  }
+  .footer-nav-object h4 {
+    font-size: 1.2rem;
+  }
+
+  /* ff */
+
+  .footer-second p {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+  .footer-second-img {
+    transform: scale(0.9);
+  }
+  .footer-second-imges {
+    flex-wrap: wrap;
+  }
+  .footer-second span {
+    font-size: 1.3rem;
+  }
+ 
+}
+
+
+/* little phones */
+@media (min-width:201px) and (max-width: 480px) {
   .nav-logo {
     width: 5rem;
   }
